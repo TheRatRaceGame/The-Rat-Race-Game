@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", function () {
         document.getElementById("businessLoanPayment").value = businessLoanPayment;
 
         // Total Expenses
-        let totalExpenses = taxes + mortgage + schoolLoanPayment + carLoan + otherExpenses + totalChildExpenses + businessLoanPayment;
+        let totalExpenses = taxes + mortgage + schoolLoanPayment + carLoan + otherExpenses + totalChildExpenses + personalLoanPayment+businessLoanPayment;
         document.getElementById("totalExpenses").value = totalExpenses;
 
         // Cash Flow Calculation
