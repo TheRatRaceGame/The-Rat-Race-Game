@@ -42,6 +42,10 @@ document.addEventListener("DOMContentLoaded", function () {
         let totalChildExpenses = children * costPerChild;
         document.getElementById("totalChildExpenses").value = totalChildExpenses;
 
+        let personalLoanAmount = parseFloat(document.getElementById("personalLoan").value) || 0;
+        let personalLoanPayment = personalLoanAmount * 0.1;
+        document.getElementById("personalLoanPayment").value = personalLoanPayment;
+        
         let businessLoanAmount = parseFloat(document.getElementById("businessLoan").value) || 0;
         let businessLoanPayment = businessLoanAmount * 0.005;
         document.getElementById("businessLoanPayment").value = businessLoanPayment;
