@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income Statement</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="center">Income Statement</h1>
+
+    <section id="income">
+        <h2>Income</h2>
+        <label>Monthly Salary: <input type="number" id="salary" value="0"></label>
+        <label>Spouse Salary: <input type="number" id="spouseSalary" value="0"></label>
+        <label>Side Gig: <input type="number" id="sideGigSalary" value="0"></label>
+        <label>Stock Dividends: <input type="number" id="stockDividends" value="0" readonly></label>
+        <label>Property/Business Income: <input type="number" id="propertyIncome" value="0" readonly></label>
+        <label>Total Passive Income: <input type="number" id="totalPassiveIncome" value="0" readonly></label>
+        <label>Total Income: <input type="number" id="totalIncome" value="0" readonly></label>
+    </section>
+
+    <hr>
+
+    <section id="expenses">
+        <h2>Expenses</h2>
+        <label>Taxes: <input type="number" id="taxes" value="0"></label>
+        <label>Mortgage/Rent: <input type="number" id="mortgage" value="0"></label>
+        <label>School Loan Amount: <input type="number" id="schoolLoanAmount" value="0"></label>
+        <label>Monthly School Loan Payment: <input type="number" id="schoolLoanPayment" value="0" readonly></label>
+        <label>Car Loan: <input type="number" id="carLoan" value="0"></label>
+        <label>Other Expenses: <input type="number" id="otherExpenses" value="0"></label>
+        <label>Children (0-4): <input type="number" id="children" min="0" max="4" value="0"></label>
+        <label>Cost per Child: <input type="number" id="costPerChild" value="0"></label>
+        <label>Total Child Expenses: <input type="number" id="totalChildExpenses" value="0" readonly></label>
+        <label>Business/Personal Loan: <input type="number" id="businessLoan" value="0"></label>
+        <label>Monthly Business Loan Payment: <input type="number" id="businessLoanPayment" value="0" readonly></label>
+        <label>Total Expenses: <input type="number" id="totalExpenses" value="0" readonly></label>
+    </section>
+
+    <hr>
+
+    <section id="cashFlow">
+        <h2>Cash Flow</h2>
+        <label>Total Cash Flow: <input type="number" id="totalCashFlow" value="0" readonly></label>
+        <label>Cash on Hand: <input type="number" id="cashOnHand" value="0" readonly></label>
+        <button id="getPaid">Get Paid</button>
+        <button id="addMoney">Add Money</button>
+        <button id="takeMoney">Take Away Money</button>
+    </section>
+
+    <hr>
+
+    <h2>Properties and Businesses</h2>
+    <table id="properties">
+        <tr>
+            <th>Property/Business</th>
+            <th>DP/Initial Investment</th>
+            <th>Cash Flow</th>
+        </tr>
+        <script>
+            for (let i = 0; i < 10; i++) {
+                document.write("<tr><td><input type='text'></td><td><input type='number' class='dpInput' value='0'></td><td><input type='number' class='cashFlowInput' value='0'></td></tr>");
+            }
+        </script>
+    </table>
+
+    <hr>
+
+    <h2>Stocks</h2>
+    <table id="stocks">
+        <tr>
+            <th>Asset</th>
+            <th>Quantity</th>
+            <th>Cost/Share</th>
+        </tr>
+        <tr>
+            <td>Stock A</td>
+            <td><input type="number" id="stockAQty" value="0"></td>
+            <td><input type="number" id="stockACost" value="0"></td>
+        </tr>
+        <tr>
+            <td>Stock B</td>
+            <td><input type="number" id="stockBQty" value="0"></td>
+            <td><input type="number" id="stockBCost" value="0"></td>
+        </tr>
+    </table>
+    <button id="buyStock">Buy Stock</button>
+    <button id="sellStock">Sell Stock</button>
+
+    <hr>
+
+    <h2>Gold Coins</h2>
+    <table id="gold">
+        <tr>
+            <th>Asset</th>
+            <th>Quantity</th>
+            <th>Cost/Coin</th>
+        </tr>
+        <tr>
+            <td>Gold Coins</td>
+            <td><input type="number" id="goldQty" value="0"></td>
+            <td><input type="number" id="goldCost" value="0"></td>
+        </tr>
+    </table>
+    <button id="buyGold">Buy Gold</button>
+    <button id="sellGold">Sell Gold</button>
+
+    <hr>
+
+<h2>Trading Cards</h2>
+<table id="tradingCards">
+    <tr>
+        <th>Asset</th>
+        <th>Quantity</th>
+        <th>Cost/Card</th>
+    </tr>
+    <tr>
+        <td>Trading Cards</td>
+        <td><input type="number" id="tradingCardsQty" value="0"></td>
+        <td><input type="number" id="tradingCardsCost" value="0"></td>
+    </tr>
+</table>
+<button id="buyTradingCards">Buy Trading Cards</button>
+<button id="sellTradingCards">Sell Trading Cards</button>
+
+<script src="script.js"></script>
+</body>
+</html>
