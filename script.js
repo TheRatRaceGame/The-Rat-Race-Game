@@ -10,8 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
         let stockBQty = parseFloat(document.getElementById("stockBQty").value) || 0;
         let propertyIncome = 0;
 
-        // Calculate Stock Dividends
-        let stockDividends = stockBQty * 0.5;
+        // Calculate Stock Dividendsy
+        let stockDividends = stockBQty * 0.1;
         document.getElementById("stockDividends").value = stockDividends;
 
         // Calculate Property/Business Income (Sum of Column 3 in Properties Table)
